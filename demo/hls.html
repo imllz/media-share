@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HLS 播放</title>
+  <link crossorigin="anonymous" integrity="sha384-PVWz2r7pc/OJZoh44AxKqdptMuhB9o1XwItiKDseXemF5L5qjvbkUad4VJYibvLU" href="http://lib.baomitu.com/chimee-player/1.4.8/chimee-player.browser.css" rel="stylesheet">
+  <script crossorigin="anonymous" integrity="sha384-SXr8VWwLxnDHbP01tSBd9kLkkBaNLdKiSPgt0JSaFkamzTLeKk43G8Ip6roYcVJQ" src="http://lib.baomitu.com/chimee-player/1.4.8/chimee-player.browser.js"></script>
+</head>
+<body>
+  <div id="wrapper"></div>
+  <script>
+    new ChimeePlayer({
+      wrapper: '#wrapper',  // video dom容器
+      src: 'http://localhost/hls/test.m3u8',
+      box: 'hls',
+      isLive: true,
+      autoplay: true,
+      controls: true
+    });
+  </script>
+</body>
+</html>
