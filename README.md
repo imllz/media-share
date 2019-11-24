@@ -187,10 +187,10 @@ http {
     
     location /live {
       flv_live on;
-      chunked_transfer_encoding on; #支持'Transfer-Encoding: chunked'方式回复
+      chunked_transfer_encoding  on;
 
-      add_header 'Access-Control-Allow-Origin' '*'; #添加额外的HTTP头
-      add_header 'Access-Control-Allow-Credentials' 'true'; #添加额外的HTTP头
+      add_header 'Access-Control-Allow-Origin' '*'; 
+      add_header 'Access-Control-Allow-Credentials' 'true';
     }
   }
 }
